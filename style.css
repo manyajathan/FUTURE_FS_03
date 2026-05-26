@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #fffaf5;
+    color: #5c4b51;
+}
+
+/* Navbar */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 50px;
+
+    background-color: #f8d7da;
+
+    position: sticky;
+    top: 0;
+}
+
+nav h1{
+    color: #6d4c5b;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #5c4b51;
+    font-weight: bold;
+}
+
+/* Hero Section */
+
+.hero{
+    height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+        rgba(255,255,255,0.5),
+        rgba(255,255,255,0.5)
+    ),
+    url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text{
+    background-color: rgba(255,255,255,0.7);
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    width: 70%;
+}
+
+.hero h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+
+button{
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background-color: #d8b4a0;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+
+/* Menu */
+
+.menu{
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.menu h2{
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: #ffe5ec;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    width: 250px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+/* About */
+
+.about{
+    padding: 60px 40px;
+    text-align: center;
+
+    background-color: #f9f1f0;
+}
+
+.about h2{
+    margin-bottom: 20px;
+}
+
+/* Contact */
+
+.contact{
+    padding: 60px 40px;
+    text-align: center;
+}
+
+/* Responsive */
+
+@media(max-width: 768px){
+
+    nav{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero h2{
+        font-size: 35px;
+    }
+
+    .hero-text{
+        width: 90%;
+    }
+
+}
